@@ -4,7 +4,19 @@
     <meta charset="UTF-8">
     <title>Directory</title>
 </head>
-<body>
-<h1>Directory</h1>
-</body>
+    <body>
+    <h1>Directory</h1>
+    <h2>Agents</h2>
+        <main>
+            {% for agent in agents %}
+                <section>
+                    <img src="{{ agent.image }}" alt="{{ agent.name }}"/>
+                    <h3>{{ agent.name }}</h3>
+                    <p>{{ agent.title }}</p>
+                    <p>Hired language: {{ agent.hired_language}}</p>
+                    <email>{{ agent.email }}</email>
+                </section>
+            {% endfor %}
+        </main>
+    </body>
 </html>
