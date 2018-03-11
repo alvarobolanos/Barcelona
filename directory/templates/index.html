@@ -1,0 +1,26 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Directory</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+        <link rel="stylesheet" href="{% static 'css/main.css' %}"/>
+    </head>
+    <body>
+    <h1>Directory</h1>
+    <h2>Agents</h2>
+        <main>
+            {% for agent in agents %}
+                <section>
+                    <img class = "agent_image" src="{{ agent.image }}" alt="{{ agent.name }}"/>
+                    <h3>{{ agent.name }}</h3>
+                    <p class="agent_title">{{ agent.title }}</p>
+                    <p class="hired_language">Hired language: {{ agent.hired_language}}</p>
+                    <email>{{ agent.email }}</email>
+                </section>
+            {% endfor %}
+        </main>
+    </body>
+</html>
