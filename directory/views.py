@@ -1,8 +1,12 @@
 from django.shortcuts import render
-from .models import Agent
+from .models import Employee
 
 # Create your views here.
 
 def index(request):
-    agents = Agent.objects.all()
-    return render(request, 'index.html', {'agents':agents})
+    employees = Employee.objects.all()
+    return render(request, 'index.html', {'employees':employees})
+
+def detail(request, slug):
+    employee = Employee.objects.get(slug=slug)
+    return render(request, 'detail.html', {'employee':employee})

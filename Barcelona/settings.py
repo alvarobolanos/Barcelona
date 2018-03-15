@@ -55,7 +55,7 @@ ROOT_URLCONF = 'Barcelona.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['Barcelona/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

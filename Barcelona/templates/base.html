@@ -1,0 +1,31 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Manager Toolkit</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
+        <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+    </head>
+    <body>
+        <navbar>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/directory">Team Directory</a></li>
+            </ul>
+        </navbar>
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+    <footer>
+        <ul>
+            <li>footer 1</li>
+            <li>footer 2</li>
+            <li>footer 3</li>
+        </ul>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load staticfiles%}
+
+{% block content %}
+    <h1>Employee</h1>
+        <section>
+            <img class = "employee_image" src="{{ employee.image }}" alt="{{ employee.name }}"/>
+            <h3>{{ employee.name }}</h3>
+            <email>{{ employee.email }}</email>
+        </section>
+{% endblock %}
