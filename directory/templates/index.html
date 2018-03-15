@@ -1,17 +1,21 @@
 {% extends 'base.html' %}
-{% load staticfiles %}
 
 {% block content%}
 
     <h1>Directory</h1>
     <h2>Employees</h2>
-    {% for employee in employees %}
+    {% for employee in employees|dictsort:'name'%}
         <section>
-            <a href="{% url 'detail' employee.slug %}">
+            <div class="col-md-4">
+                <a href="{% url 'detail' employee.slug %}">
                 <img class = "employee_image" src="{{ employee.image }}" alt="{{ employee.name }}"/>
-            </a>
-            <h3>{{ employee.name }}</h3>
-            <email>{{ employee.email }}</email>
+                </a>
+                <h3>{{ employee.name }}</h3>
+                <email>{{ employee.email }}</email>
+            </div>
+            {% if forloop.counter|divisibleby:3%}
+                </div><div class="row"></div>
+            {% endif %}
         </section>
     {% endfor %}
 

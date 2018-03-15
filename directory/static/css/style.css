@@ -1,20 +1,18 @@
 /* style.css */
 
-/* Common to all apps */
 
 body{
     background-color: #eee;
-    margin: 60px 15px;
     font-size: 16px;
+    margin-bottom: 60px;
 }
 
-h1 {
-    color: #777;
+body > .container {
+  padding: 60px 15px 0;
 }
 
-h2 {
-    font-size: 2 em;
-    font-weight: bold;
+nav {
+    margin-bottom: 100px;
 }
 
 main {
@@ -32,40 +30,10 @@ section {
     text-align: center;
 }
 
-navbar {
-
+footer {
+    padding-left: 15px;
 }
 
-
-navbar ul {
-
-    color: white;
-    background-color: #333;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-}
-
-navbar ul li {
-
-    float: left;
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding-left: 8px;
-}
-
-navbar ul li a {
-    color: white;
-}
-
-footer ul li {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-}
 
 /* directory */
 
