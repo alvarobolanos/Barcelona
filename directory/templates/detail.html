@@ -7,6 +7,6 @@
             <img class = "employee_image" src="{{ employee.image }}" alt="{{ employee.name }}"/>
             <h3>{{ employee.name }}</h3>
             <email>{{ employee.email }}</email>
-            <a href="{% url 'edit' %}"><img src="" alt=""></a>
+            <a href="{% url 'edit' employee.slug %}"><img src="" alt="">edit</a>
         </section>
 {% endblock %}
