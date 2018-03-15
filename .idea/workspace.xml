@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9a8a4e2-4b58-459e-a96f-c640d4ca465c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/Barcelona.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Barcelona/templates/base.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/static/style.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/templates/index.html" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/directory/templates/detail.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/directory/static/css/main.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Barcelona/settings.py" afterPath="$PROJECT_DIR$/Barcelona/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Barcelona/urls.py" afterPath="$PROJECT_DIR$/Barcelona/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directory/admin.py" afterPath="$PROJECT_DIR$/directory/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directory/models.py" afterPath="$PROJECT_DIR$/directory/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directory/templates/index.html" afterPath="$PROJECT_DIR$/directory/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directory/urls.py" afterPath="$PROJECT_DIR$/directory/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/directory/views.py" afterPath="$PROJECT_DIR$/directory/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -330,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1520704172799</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added detail view for directory">
+      <created>1521129417480</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1521129417480</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -392,7 +386,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Directory is pulling data from database" />
     <MESSAGE value="Created css for directory app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created css for directory app" />
+    <MESSAGE value="Added detail view for directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added detail view for directory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
