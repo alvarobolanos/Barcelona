@@ -6,13 +6,11 @@
     <h2>Employees</h2>
     {% for employee in employees|dictsort:'name'%}
         <section>
-            <div class="col-md-4">
-                <a href="{% url 'detail' employee.slug %}">
-                <img class = "employee_image" src="{{ employee.image }}" alt="{{ employee.name }}"/>
-                </a>
-                <h3>{{ employee.name }}</h3>
-                <email>{{ employee.email }}</email>
-            </div>
+            <a href="{% url 'detail' employee.slug %}">
+                <img class="employee_image" src="{{ employee.image }}" alt="{{ employee.name }}"/>
+            </a>
+            <h3>{{ employee.name }}</h3>
+            <email>{{ employee.email }}</email>
             {% if forloop.counter|divisibleby:3%}
                 </div><div class="row"></div>
             {% endif %}
